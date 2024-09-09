@@ -1,0 +1,77 @@
+/* Réinitialisation des marges et des espacements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Style du corps de la page */
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+    background: #f5f5f5;
+  }
+  
+  /* Conteneur principal de la calculatrice */
+  .calculator {
+    width: 300px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(187, 114, 114, 0.3);
+    overflow: hidden;
+  }
+  
+  /* Affichage des résultats */
+  #output {
+    background: #411212;
+    color: #fff;
+    font-size: 2rem;
+    text-align: right;
+    padding: 20px;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  /* Conteneur des boutons */
+  #button-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+  
+  /* Style des boutons */
+  button {
+    font-size: 1.2rem;
+    border: none;
+    background: #f0f0f0;
+    color: #333;
+    padding: 20px;
+    cursor: pointer;
+    transition: background 0.3s, box-shadow 0.3s;
+  }
+  
+  /* Style des boutons principaux */
+  button.btn-primary {
+    background: #945b0b;
+    color: #fff;
+  }
+  
+  button.btn-primary:hover {
+    background: #945b0b;
+  }
+  
+  /* Style des boutons secondaires */
+  button.btn-secondary {
+    background: #f0f0f0;
+  }
+  
+  button.btn-secondary:hover {
+    background: #ddd;
+  }
+  
+  /* Effet d'ombre au survol */
+  button:hover {
+    box-shadow: 0 4px 8px rgba(203, 19, 19, 0.2);
+  }
+  
